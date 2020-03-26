@@ -31,7 +31,7 @@ export default {
         uf
       });
     
-      return res.send({id})
+      return res.send({id, name})
     }catch(err){
       return res.status(404).send(err);
     }

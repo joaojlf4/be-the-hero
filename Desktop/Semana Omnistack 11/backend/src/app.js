@@ -6,7 +6,7 @@ import morgan from 'morgan';
 const app = Express();
 
 app.use(cors());
-app.use(morgan(':method :url :response-time :status'))
+app.use(morgan(':method :url :status:response-time'))
 app.use(Express.json());
 app.use(routes);
 
